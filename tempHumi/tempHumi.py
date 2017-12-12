@@ -1,0 +1,1 @@
+import mimport timefrom machine import I2Cfrom machine import Pinfrom sht2x import SHT25sensor = SHT25(I2C(scl=Pin(m.SCL), sda=Pin(m.SDA)))while True:	print(str(sensor.getTemperature()) + ", " + str(sensor.getHumidity()))	time.sleep(1)  
